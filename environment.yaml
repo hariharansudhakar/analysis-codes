@@ -1,0 +1,42 @@
+name: md-analysis
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python
+  - python=3.10
+
+  # Numerical & data handling
+  - numpy
+  - scipy
+  - pandas
+
+  # Plotting & visualization
+  - matplotlib
+  - seaborn
+
+  # Atomistic / MD tools
+  - ase
+  - mdtraj
+
+  # File handling & formats
+  - h5py
+  - netcdf4
+
+  # Performance & utilities
+  - numba
+  - tqdm
+
+  # Interactive / notebooks (optional but useful)
+  - ipython
+  - jupyterlab
+
+  # Development & formatting
+  - black
+  - flake8
+
+  # Pip-only packages (if needed)
+  - pip
+  - pip:
+      - ovito
