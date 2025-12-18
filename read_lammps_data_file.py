@@ -29,15 +29,15 @@ def read_lammps_data_file(file_path):
 				continue
 
 			if is_atoms:
-                atoms.append(parts)
-            elif is_bonds:
-                bonds.append(parts)
-            elif is_angles:
-                angles.append(parts)
-            elif is_dihedrals:
-                dihedrals.append(parts)
-            elif is_impropers:
-                impropers.append(parts)
+				atoms.append(parts)
+			elif is_bonds:
+				bonds.append(parts)
+			elif is_angles:
+				angles.append(parts)
+			elif is_dihedrals:
+				dihedrals.append(parts)
+			elif is_impropers:
+				impropers.append(parts)
 
 	atoms = np.array(atoms, dtype=float) if atoms else np.empty((0, 9))
     bonds = np.array(bonds, dtype=int) if bonds else np.empty((0, 4), dtype=int)
